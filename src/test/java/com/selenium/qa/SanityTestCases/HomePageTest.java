@@ -9,10 +9,11 @@ import org.testng.annotations.Test;
 
 import com.toms.qa.base.TestBase;
 import com.toms.qa.pages.HomePage;
+import com.toms.qa.util.BrokenLinksUtility;
 
 public class HomePageTest extends TestBase {
 	HomePage homePageObject;
-
+	BrokenLinksUtility brokenLinkObj;
 	public HomePageTest() {
 		super();
 	}
@@ -21,6 +22,7 @@ public class HomePageTest extends TestBase {
 	public void setUp() {
 		initialization();
 		homePageObject = new HomePage();
+		brokenLinkObj= new BrokenLinksUtility();
 	}
 
 	@Test(priority = 1)
@@ -39,8 +41,11 @@ public class HomePageTest extends TestBase {
 		System.out.println("Total Active Link Pressent in the Home Page ==" +listOfHomePageLink.size());
 	}
 	
-	
-	
+	@Test(priority = 3)
+	public void verifyAllHomePageLinkTest(){
+		homePageObject.closeThePopUpWindow();
+		brokenLinkObj.verifyBrokenLink("http://www.toms.com/", homePageObject.getAllHomePageLink());
+	}
 	
 	@AfterMethod
 	public void tearDown() {
