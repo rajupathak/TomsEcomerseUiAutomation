@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TomsSanityTestSuite">
+	<listeners>
+		<listener class-name="com.toms.qa.ExtentReportListener.ExtentReporterNG" />
+	</listeners>
+	<test name="TomsUiTest">
+		<classes>
+			<class name="com.selenium.qa.SanityTestCases.HomePageTest" />
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- TomsSanityTestSuite -->
