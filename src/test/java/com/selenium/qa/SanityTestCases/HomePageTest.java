@@ -23,7 +23,7 @@ public class HomePageTest extends TestBase {
 		homePageObject = new HomePage();
 	}
 
-	/*@Test(priority = 1)
+	@Test(priority = 1)
 	public void verifyHomePageTitleTest() {
 		String homePageTitle = homePageObject.verifyHomepageTitle();
 		System.out.println("Title="+homePageTitle);
@@ -31,7 +31,7 @@ public class HomePageTest extends TestBase {
 		
 		homePageObject.closeThePopUpWindow();
 
-	}*/
+	}
 	@Test(priority = 2)
 	public void verifyTotalLinkTest() throws InterruptedException{
 		homePageObject.closeThePopUpWindow();
