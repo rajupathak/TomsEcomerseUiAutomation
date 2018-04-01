@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.selenium.qa.SanityTestCases.HomePageTest">
+      <class name="com.selenium.qa.homepage.test.HomePageAustraiTest">
         <methods>
-          <include name="verifyTotalLinkTest"/>
-          <include name="setUp"/>
+          <include name="sanity_GuestUserCheckOutFlowTest"/>
           <include name="tearDown"/>
+          <include name="setUp"/>
         </methods>
-      </class> <!-- com.selenium.qa.SanityTestCases.HomePageTest -->
+      </class> <!-- com.selenium.qa.homepage.test.HomePageAustraiTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

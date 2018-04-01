@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TomsSanitySuite]">
+  <test name="Home Page Title Test(failed)">
+    <classes>
+      <class name="com.selenium.qa.homepage.test.HomePageAustraiTest">
+        <methods>
+          <include name="sanity_GuestUserCheckOutFlowTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.selenium.qa.homepage.test.HomePageAustraiTest -->
+    </classes>
+  </test> <!-- Home Page Title Test(failed) -->
+</suite> <!-- Failed suite [TomsSanitySuite] -->

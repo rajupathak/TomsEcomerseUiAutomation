@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TomsSanitySuite" >
+	<test name="Home Page Title Test">
+		<classes>
+			<class name="com.selenium.qa.homepage.test.HomePageAustraiTest"></class>
+			
+		</classes>
+	</test>
+
+</suite> <!-- TomsSanitySuite -->
